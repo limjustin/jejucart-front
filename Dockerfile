@@ -8,7 +8,7 @@ FROM base AS deps
 WORKDIR /usr/src/app
 
 # Install dependencies based on the preferred package manager
-COPY package*.json ./
+COPY krampoline/package*.json ./
 RUN npm ci
 
 
